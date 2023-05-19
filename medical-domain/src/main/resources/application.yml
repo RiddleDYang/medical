@@ -1,0 +1,18 @@
+spring:
+  datasource: # 配置数据源
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/medical_dev
+    username: postgres
+    password: 123456
+#spring:
+#  datasource: # 配置数据源
+#    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/medical?useSSL=false
+#    username: root
+#    password: 123456
+  jpa:
+    show-sql: true #日志记录sql
+    database: postgresql #DB类型
+#    database: mysql #DB类型
+    hibernate:
+      ddl-auto: update #表的生成策略
